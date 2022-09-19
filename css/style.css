@@ -3,7 +3,7 @@
 }
 .nav-dot:hover ~ span  {
     opacity: 1;
-    margin-left: 1rem;
+    transform: translateX(2.25rem);
 }
 
 .nav-dot-active {
