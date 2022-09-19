@@ -8,10 +8,73 @@
     <title>Tailwind Portfolio</title>
     <!-- Tailwind Script -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Goole Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Main Style Sheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="bg-body text-white font-poppins">
+    <!-- Header -->
+    <header class="mt-8">
+        <div class="container flex justify-between">
+            <h3 class="font-montserrat text-2xl">Jonathan.doe</h3>
+            <nav>
+                <ul class="flex space-x-12">
+                    <li><a href="#home" class="text-active">Home</a></li>
+                    <li><a href="#work">My Work</a></li>
+                    <li><a href="#client">Clients</a></li>
+                    <li><a href="#hire" class="bg-theme px-7 py-2 font-bold">Hire Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section id="home" class=" mt-16">
+            <div class="container flex">
+                <ul class="home-nav space-y-4">
+                    <li class="flex items-center">
+                        <a href="#home" class="block w-7 h-7 rounded-full border-4 border-nav nav-dot nav-dot-active">
+                        </a>
+                        <span
+                            class="bg-black px-4 py-1 rounded-md -ml-4 transition-all select-none opacity-0 relative -z-10">Home</span>
+                    </li>
+                    <li class="flex items-center">
+                        <a href="#home" class="block w-7 h-7 rounded-full border-4 border-nav nav-dot">
+                        </a>
+                        <span
+                            class="bg-black px-4 py-1 rounded-md -ml-4 transition-all select-none opacity-0 relative -z-10">Home</span>
+                    </li>
+                    <li class="flex items-center">
+                        <a href="#home" class="block w-7 h-7 rounded-full border-4 border-nav nav-dot">
+                        </a>
+                        <span
+                            class="bg-black px-4 py-1 rounded-md -ml-4 transition-all select-none opacity-0 relative -z-10">Home</span>
+                    </li>
+                    <li class="flex items-center">
+                        <a href="#home" class="block w-7 h-7 rounded-full border-4 border-nav nav-dot">
+                        </a>
+                        <span
+                            class="bg-black px-4 py-1 rounded-md -ml-4 transition-all select-none opacity-0 relative -z-10">Home</span>
+                    </li>
+                </ul>
+                <div>
+                    <h1>Building<br>beautiful web<br>experiences.</h1>
+                    <a href="#work">View my Work</a>
+                </div>
+                <!-- <img class="" src="img/man.png" alt=""> -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Tailwind Config Sripts -->
+    <script src="js/tailwind.config.js"></script>
 
 </body>
 

@@ -1,0 +1,12 @@
+:root {
+    --color-theme: #3F3FFF;
+}
+.nav-dot:hover ~ span  {
+    opacity: 1;
+    margin-left: 1rem;
+}
+
+.nav-dot-active {
+    background: var(--color-theme);
+    border-color: var(--color-theme);
+}
