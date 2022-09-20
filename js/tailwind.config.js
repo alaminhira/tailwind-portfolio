@@ -15,6 +15,9 @@ tailwind.config = {
         poppins: ["'Poppins'", 'sans-serif'],
         montserrat: ["'Montserrat'", 'sans-serif']
       },
+      spacing: {
+        '5/20': '5%' 
+      },
       container: {
         center: true,
         padding: '4rem',

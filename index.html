@@ -14,6 +14,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;600;700&display=swap"
         rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- Main Style Sheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,7 +24,7 @@
     <!-- Header -->
     <header class="mt-8">
         <div class="container flex justify-between">
-            <h3 class="font-montserrat text-2xl">Jonathan.doe</h3>
+            <h3 class="text-xl font-bold">Jonathan.doe</h3>
             <nav>
                 <ul class="flex space-x-12">
                     <li><a href="#home" class="text-active">Home</a></li>
@@ -36,10 +38,11 @@
 
     <!-- Main -->
     <main>
-        <section id="home" class=" mt-16">
+        <!-- Home Section -->
+        <section id="home" class="mt-16 pb-40">
             <div class="container flex">
-                <nav class="relative">
-                    <ul class="home-nav space-y-4 absolute -left-12 mt-12">
+                <nav class="fixed left-5/20">
+                    <ul class="home-nav space-y-6 mt-36">
                         <li class="flex items-center">
                             <a href="#home" class="block w-7 h-7 rounded-full border-4 nav-dot nav-dot-active">
                             </a>
@@ -66,11 +69,44 @@
                         </li>
                     </ul>
                 </nav>
-                <div>
-                    <h1>Building<br>beautiful web<br>experiences.</h1>
-                    <a href="#work">View my Work</a>
+                <div class="mt-36 ml-20">
+                    <h1 class="font-montserrat text-7xl font-bold tracking-wide">Building<br>beautiful
+                        web<br>experiences.</h1>
+                    <a class="bg-theme px-10 py-4 rounded inline-block font-semibold mt-16" href="#work"><i
+                            class="fa-solid fa-eye mr-4"></i>View my Work</a>
                 </div>
-                <!-- <img class="" src="img/man.png" alt=""> -->
+                <img class="w-3/4 absolute -z-10 right-0" src="img/man.png" alt="">
+            </div>
+        </section>
+        <!-- Work Section -->
+        <section id="work" class="py-32">
+            <div class="container">
+                <h2 class="text-3xl font-bold">My Work</h2>
+                <p class="text-slate-400 max-w-3xl my-6">I’ve had the pleasure of working with multiple Fortune 500
+                    companies,
+                    designing
+                    and implementing both
+                    frontend and backend</p>
+                <div class="grid grid-cols-3 gap-6">
+                    <img class="w-full h-72 object-cover"
+                        src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+                        alt="">
+                    <img class="w-full h-72 object-cover"
+                        src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                        alt="">
+                    <img class="w-full h-72 object-cover"
+                        src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+                        alt="">
+                    <img class="w-full h-72 object-cover"
+                        src="https://images.unsplash.com/photo-1558655146-d09347e92766?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80"
+                        alt="">
+                    <img class="w-full h-72 object-cover"
+                        src="https://images.unsplash.com/photo-1547119957-637f8679db1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                        alt="">
+                    <img class="w-full h-72 object-cover"
+                        src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1336&q=80"
+                        alt="">
+                </div>
             </div>
         </section>
     </main>
